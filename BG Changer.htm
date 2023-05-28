@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    
+    <style>
+        #container{
+           padding: 20px 40px;
+           text-align: justify;
+        }
+       h1{
+        text-align: center;
+        font-size: 40px;
+        text-decoration: wavy;
+       }
+        img{
+            margin-left: 25%;;
+            height:400px;
+            width:50%;
+            position: sticky;
+            border-radius:250px;
+        }
+        #white, #orange, 
+        #green, #black{
+
+           text-align: right;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            border:2px solid #808080;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: #f0f8ff;
+        }
+        #orange{
+            background-color: #ffa500;
+        }
+        #green{
+            background-color: #90ee90;
+        }
+        #black{
+            background-color: #000000;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="container">
+        <span class="button" id="white" onclick="BGchanger('#f0f8ff')"></span>
+        <span class="button" id="orange" onclick="BGchanger('#ffa500')"></span>
+        <span class="button" id="green" onclick="BGchanger('#90ee90')"></span>
+        <span class="button" id="black" onclick="BGchanger('#000000')"></span>
+        
+        <h1 class="text">Topp Gear</h1>
+        
+        <img src="C:\Users\ASUS\Desktop\sh.jpg">
+        
+        <p class="text">
+        This is Gaming Channel which is running on YouTube. Created on Dec 2022. This Channel has lots of Gaming Videos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis libero officiis aspernatur voluptates itaque illo, at dolorem aliquam iusto enim. Assumenda minima dolore illum labore eligendi officiis. Aliquid, in excepturi praesentium illum facere impedit delectus maiores, aliquam eos expedita, nulla fugiat? Debitis adipisci illo impedit blanditiis dolore sint numquam eaque magnam provident aliquam velit, rem ullam ratione. Non recusandae, officiis commodi itaque labore totam corrupti doloremque consectetur iusto eligendi inventore molestiae harum quas. Qui, laborum? Repellat, quia vero! Natus alias porro harum voluptatum ducimus minus est eius quisquam deleniti necessitatibus ea, optio tempora, minima nam similique beatae atque, consectetur animi! Dolores sunt amet, unde sint facilis nam consequatur quisquam culpa repellat voluptate expedita recusandae magni, repudiandae molestias facere eligendi. Veniam sint quam, explicabo modi quod, sed voluptates ullam esse molestias hic quo temporibus! Facilis maiores vero, eveniet eum modi omnis! Dolore obcaecati, ratione accusamus voluptates ipsum doloribus officia enim modi, assumenda maxime provident ipsam similique. Consequuntur, quam. Harum labore saepe maiores veritatis tempore similique quae, error blanditiis eius! Hic ut nesciunt eius similique rerum ad necessitatibus libero consequuntur animi. Repellendus a id, error rerum voluptatum quas ipsam sunt nesciunt ullam repellat facere odit tenetur omnis odio aut pariatur animi veritatis aperiam fuga explicabo. Impedit recusandae doloribus quia vitae inventore porro aliquid ut dolores incidunt distinctio deserunt harum facilis quas, dicta quasi qui alias iste, dolore omnis possimus earum error. Dicta, consequuntur hic! In, nam! Cumque recusandae officiis dolorem voluptates dolor exercitationem, in tempora debitis, eius, accusamus facere. Possimus nemo incidunt deleniti non aliquam illo quae, ipsum magnam fugiat sed minus soluta! Perspiciatis veritatis tempora consequatur natus laboriosam dignissimos doloribus, itaque quia, nemo dicta necessitatibus impedit quas maxime sequi eos. Reiciendis sequi modi ullam error nihil voluptatem hic molestiae facere ea. At quasi facere saepe explicabo quos dignissimos sunt et deleniti, ut similique eligendi illo eaque optio officia unde, quisquam enim quo! Quas nesciunt laboriosam odit vel eum modi dolorum enim et ad recusandae, earum dicta dolorem provident dolore officia ut amet tenetur consectetur quaerat. Laudantium voluptates omnis, iste doloremque reiciendis, sed blanditiis saepe labore ducimus quisquam, at iure tempora error accusantium ratione culpa voluptas debitis sit molestias expedita. Non nostrum maiores deleniti. Eos distinctio expedita dolorum cum placeat fugiat iure ipsum illum eveniet assumenda rerum doloremque, quis tempora nostrum officiis cupiditate, aliquid voluptatum blanditiis veniam sit voluptate labore incidunt accusamus. Ex, non vel inventore consequatur cupiditate ipsam ipsum placeat iste sequi necessitatibus reiciendis harum, repellendus temporibus quam. Inventore, fugit ea quia repellat aliquid ducimus repellendus libero. Magni dicta quidem culpa natus fugit aperiam, similique a officiis eaque neque corrupti omnis, unde ratione explicabo sint rerum esse optio laborum debitis sit dolores repellat nesciunt eius. Fugit, corrupti! Quaerat aperiam eveniet in, veritatis at ipsa natus fuga, quae ipsum deleniti quasi autem itaque nulla dicta porro quas quod optio numquam unde illum, provident labore. Minima perferendis nisi praesentium facilis excepturi assumenda eligendi fugit? Excepturi maiores iure explicabo porro quibusdam vitae obcaecati. Debitis deserunt consectetur voluptates iusto. Illum laboriosam labore et iste eius!
+        </p>
+    </div>
+
+    <script>
+          function BGchanger(color){
+            document.body.style.background = color;
+
+            // heading and para ke colour ko black karne par white show hona chaiye text isliye
+
+            let textc = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let element of textc){
+                    element.style.color = "white";
+                }
+             } else{
+                    for(let element of textc){
+                        element.style.color = "black";
+                    }
+                }
+            }
+          
+    </script>
+
+</body>
+</html>
